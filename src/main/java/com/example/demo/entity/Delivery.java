@@ -15,7 +15,7 @@ import java.util.List;
         @NamedQuery(name = "Delivery.findByName",
                 query = "select d from Delivery d where d.name=:name"),
 })
-@Entity
+@Entity(name = "Delivery")
 public class Delivery {
 
     @Nationalized

@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import javax.persistence.Entity;
 
-@Entity
+@Entity(name = "Shrub")
 public class Shrub extends Plant {
 
     private String height;

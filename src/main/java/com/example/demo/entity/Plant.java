@@ -7,7 +7,7 @@ import org.hibernate.annotations.Nationalized;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Entity
+@Entity(name = "Plant")
 @Inheritance(strategy = InheritanceType.JOINED)
 @NamedQuery(name = "Plant.findByPriceLessThan", query = "SELECT m from Plant m where m.price > :price")
 public class Plant {

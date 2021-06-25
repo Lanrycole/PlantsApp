@@ -9,8 +9,9 @@ import javax.sound.midi.Sequence;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-@Entity
-public class Flower  extends Plant{
+@Entity(name = "Flower")
+public class Flower
+        extends Plant{
 
     private String color;
 
